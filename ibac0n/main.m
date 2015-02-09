@@ -1,6 +1,6 @@
 //
 //  main.m
-//  unlock
+//  ibac0n
 //
 //  Based heavily on: https://github.com/mttrb/BeaconOSX
 //
