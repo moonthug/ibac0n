@@ -1,0 +1,267 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6852216D1A88F9C400DE8F4E /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6852216B1A88F9C400DE8F4E /* IOBluetooth.framework */; };
+		6852216E1A88F9C400DE8F4E /* IOBluetoothUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6852216C1A88F9C400DE8F4E /* IOBluetoothUI.framework */; };
+		685221751A88F9E000DE8F4E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 685221711A88F9E000DE8F4E /* AppDelegate.m */; };
+		685221761A88F9E000DE8F4E /* BeaconAdvertisementData.m in Sources */ = {isa = PBXBuildFile; fileRef = 685221731A88F9E000DE8F4E /* BeaconAdvertisementData.m */; };
+		685221771A88F9E000DE8F4E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 685221741A88F9E000DE8F4E /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6852215F1A88F99600DE8F4E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		685221611A88F99600DE8F4E /* ibac0n */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ibac0n; sourceTree = BUILT_PRODUCTS_DIR; };
+		6852216B1A88F9C400DE8F4E /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = System/Library/Frameworks/IOBluetooth.framework; sourceTree = SDKROOT; };
+		6852216C1A88F9C400DE8F4E /* IOBluetoothUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetoothUI.framework; path = System/Library/Frameworks/IOBluetoothUI.framework; sourceTree = SDKROOT; };
+		685221701A88F9E000DE8F4E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		685221711A88F9E000DE8F4E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		685221721A88F9E000DE8F4E /* BeaconAdvertisementData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconAdvertisementData.h; sourceTree = "<group>"; };
+		685221731A88F9E000DE8F4E /* BeaconAdvertisementData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconAdvertisementData.m; sourceTree = "<group>"; };
+		685221741A88F9E000DE8F4E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6852215E1A88F99600DE8F4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6852216D1A88F9C400DE8F4E /* IOBluetooth.framework in Frameworks */,
+				6852216E1A88F9C400DE8F4E /* IOBluetoothUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		685221581A88F99600DE8F4E = {
+			isa = PBXGroup;
+			children = (
+				6852216F1A88F9CE00DE8F4E /* Frameworks */,
+				685221631A88F99600DE8F4E /* ibac0n */,
+				685221621A88F99600DE8F4E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		685221621A88F99600DE8F4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				685221611A88F99600DE8F4E /* ibac0n */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		685221631A88F99600DE8F4E /* ibac0n */ = {
+			isa = PBXGroup;
+			children = (
+				685221701A88F9E000DE8F4E /* AppDelegate.h */,
+				685221711A88F9E000DE8F4E /* AppDelegate.m */,
+				685221721A88F9E000DE8F4E /* BeaconAdvertisementData.h */,
+				685221731A88F9E000DE8F4E /* BeaconAdvertisementData.m */,
+				685221741A88F9E000DE8F4E /* main.m */,
+			);
+			path = ibac0n;
+			sourceTree = "<group>";
+		};
+		6852216F1A88F9CE00DE8F4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6852216B1A88F9C400DE8F4E /* IOBluetooth.framework */,
+				6852216C1A88F9C400DE8F4E /* IOBluetoothUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		685221601A88F99600DE8F4E /* ibac0n */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 685221681A88F99600DE8F4E /* Build configuration list for PBXNativeTarget "ibac0n" */;
+			buildPhases = (
+				6852215D1A88F99600DE8F4E /* Sources */,
+				6852215E1A88F99600DE8F4E /* Frameworks */,
+				6852215F1A88F99600DE8F4E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ibac0n;
+			productName = ibac0n;
+			productReference = 685221611A88F99600DE8F4E /* ibac0n */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		685221591A88F99600DE8F4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = m00nthug;
+				TargetAttributes = {
+					685221601A88F99600DE8F4E = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = 6852215C1A88F99600DE8F4E /* Build configuration list for PBXProject "ibac0n" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 685221581A88F99600DE8F4E;
+			productRefGroup = 685221621A88F99600DE8F4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				685221601A88F99600DE8F4E /* ibac0n */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6852215D1A88F99600DE8F4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				685221761A88F9E000DE8F4E /* BeaconAdvertisementData.m in Sources */,
+				685221751A88F9E000DE8F4E /* AppDelegate.m in Sources */,
+				685221771A88F9E000DE8F4E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		685221661A88F99600DE8F4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		685221671A88F99600DE8F4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		685221691A88F99600DE8F4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6852216A1A88F99600DE8F4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6852215C1A88F99600DE8F4E /* Build configuration list for PBXProject "ibac0n" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				685221661A88F99600DE8F4E /* Debug */,
+				685221671A88F99600DE8F4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		685221681A88F99600DE8F4E /* Build configuration list for PBXNativeTarget "ibac0n" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				685221691A88F99600DE8F4E /* Debug */,
+				6852216A1A88F99600DE8F4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 685221591A88F99600DE8F4E /* Project object */;
+}
