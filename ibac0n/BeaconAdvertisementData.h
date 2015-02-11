@@ -1,6 +1,6 @@
 //
 //  BeaconAdvertisementData.h
-//  ibacon
+//  ibac0n
 //
 //  Created by m00nthug on 09/02/2015.
 //  Copyright (c) 2015 m00nthug. All rights reserved.
