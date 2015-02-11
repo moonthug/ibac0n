@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		683CAF381A8B8814003CC32F /* BeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 683CAF371A8B8814003CC32F /* BeaconManager.m */; };
+		683CAF3A1A8B8956003CC32F /* readme.md in Sources */ = {isa = PBXBuildFile; fileRef = 683CAF391A8B8956003CC32F /* readme.md */; };
 		6852216D1A88F9C400DE8F4E /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6852216B1A88F9C400DE8F4E /* IOBluetooth.framework */; };
-		6852216E1A88F9C400DE8F4E /* IOBluetoothUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6852216C1A88F9C400DE8F4E /* IOBluetoothUI.framework */; };
-		685221751A88F9E000DE8F4E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 685221711A88F9E000DE8F4E /* AppDelegate.m */; };
 		685221761A88F9E000DE8F4E /* BeaconAdvertisementData.m in Sources */ = {isa = PBXBuildFile; fileRef = 685221731A88F9E000DE8F4E /* BeaconAdvertisementData.m */; };
 		685221771A88F9E000DE8F4E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 685221741A88F9E000DE8F4E /* main.m */; };
 /* End PBXBuildFile section */
@@ -27,11 +27,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		683CAF361A8B8814003CC32F /* BeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconManager.h; sourceTree = "<group>"; };
+		683CAF371A8B8814003CC32F /* BeaconManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconManager.m; sourceTree = "<group>"; };
+		683CAF391A8B8956003CC32F /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 		685221611A88F99600DE8F4E /* ibac0n */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ibac0n; sourceTree = BUILT_PRODUCTS_DIR; };
 		6852216B1A88F9C400DE8F4E /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = System/Library/Frameworks/IOBluetooth.framework; sourceTree = SDKROOT; };
-		6852216C1A88F9C400DE8F4E /* IOBluetoothUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetoothUI.framework; path = System/Library/Frameworks/IOBluetoothUI.framework; sourceTree = SDKROOT; };
-		685221701A88F9E000DE8F4E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		685221711A88F9E000DE8F4E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		685221721A88F9E000DE8F4E /* BeaconAdvertisementData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconAdvertisementData.h; sourceTree = "<group>"; };
 		685221731A88F9E000DE8F4E /* BeaconAdvertisementData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconAdvertisementData.m; sourceTree = "<group>"; };
 		685221741A88F9E000DE8F4E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -43,7 +43,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6852216D1A88F9C400DE8F4E /* IOBluetooth.framework in Frameworks */,
-				6852216E1A88F9C400DE8F4E /* IOBluetoothUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +52,7 @@
 		685221581A88F99600DE8F4E = {
 			isa = PBXGroup;
 			children = (
+				683CAF391A8B8956003CC32F /* readme.md */,
 				6852216F1A88F9CE00DE8F4E /* Frameworks */,
 				685221631A88F99600DE8F4E /* ibac0n */,
 				685221621A88F99600DE8F4E /* Products */,
@@ -70,8 +70,8 @@
 		685221631A88F99600DE8F4E /* ibac0n */ = {
 			isa = PBXGroup;
 			children = (
-				685221701A88F9E000DE8F4E /* AppDelegate.h */,
-				685221711A88F9E000DE8F4E /* AppDelegate.m */,
+				683CAF361A8B8814003CC32F /* BeaconManager.h */,
+				683CAF371A8B8814003CC32F /* BeaconManager.m */,
 				685221721A88F9E000DE8F4E /* BeaconAdvertisementData.h */,
 				685221731A88F9E000DE8F4E /* BeaconAdvertisementData.m */,
 				685221741A88F9E000DE8F4E /* main.m */,
@@ -83,7 +83,6 @@
 			isa = PBXGroup;
 			children = (
 				6852216B1A88F9C400DE8F4E /* IOBluetooth.framework */,
-				6852216C1A88F9C400DE8F4E /* IOBluetoothUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -145,7 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				685221761A88F9E000DE8F4E /* BeaconAdvertisementData.m in Sources */,
-				685221751A88F9E000DE8F4E /* AppDelegate.m in Sources */,
+				683CAF381A8B8814003CC32F /* BeaconManager.m in Sources */,
+				683CAF3A1A8B8956003CC32F /* readme.md in Sources */,
 				685221771A88F9E000DE8F4E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +260,7 @@
 				6852216A1A88F99600DE8F4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

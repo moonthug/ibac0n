@@ -1,24 +1,24 @@
 //
-//  AppDelegate.m
-//  ibac0n
+//  BeaconManager.m
+//  ibacon
 //
 //  Created by Alex Coulcher on 09/02/2015.
 //  Copyright (c) 2015 m00nthug. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "BeaconManager.h"
 
 #import <IOBluetooth/IOBluetooth.h>
 
 #import "BeaconAdvertisementData.h"
 
-@interface AppDelegate () <CBPeripheralManagerDelegate>
+@interface BeaconManager () <CBPeripheralManagerDelegate>
 
 @property (nonatomic,strong) CBPeripheralManager *manager;
 
 @end
 
-@implementation AppDelegate
+@implementation BeaconManager
 
 - (void) setupWithUUID:(NSString *)uuid
                  major:(uint16_t)major
@@ -28,22 +28,26 @@
     _manager = [[CBPeripheralManager alloc] initWithDelegate:self
                                                        queue:nil];
     
-    self.beacon_uuid    = uuid;
-    self.beacon_major_v = major;
-    self.beacon_minor_v = minor;
-    self.beacon_power   = power;
+    self.beacon_uuid        = uuid;
+    self.beacon_major_v     = major;
+    self.beacon_minor_v     = minor;
+    self.beacon_power       = power;
 }
 
 - (void) peripheralManagerDidUpdateState:(CBPeripheralManager *)peripheral {
     if (peripheral.state == CBPeripheralManagerStatePoweredOn) {
         [self start];
     }
+    else {
+        NSLog(@"Peripheral state invalid: %li", peripheral.state);
+        exit(1);
+    }
 }
 
 - (void) start {
     if (_manager.isAdvertising) {
         [_manager stopAdvertising];
-        NSLog(@"Stop Advertising!");
+        //NSLog(@"Stop Advertising!");
     }
     else {
         NSUUID *proximityUUID = [[NSUUID alloc] initWithUUIDString: self.beacon_uuid];

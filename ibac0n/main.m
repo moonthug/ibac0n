@@ -10,7 +10,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "AppDelegate.h"
+#import "BeaconManager.h"
 
 int main(int argc, const char * argv[]) {
     NSString *uuid;
@@ -19,12 +19,8 @@ int main(int argc, const char * argv[]) {
     int power;
 
     if(argc < 5) {
-        NSLog(@"Generating iBeacon with random details...\nTo specify values use:\n\nibac0n <uuid> <major> <minor> <power>\n\n");
-
-        uuid = [[NSUUID UUID] UUIDString];
-        major = 1;
-        minor = 1;
-        power = -60;
+        NSLog(@"Ooops! Incorrect values set\n\nUsage:\n\n\tibac0n <uuid> <major> <minor> <power>\n\n");
+        return 1;
     }
     else {
         uuid = [NSString stringWithUTF8String:argv[1]];
@@ -40,11 +36,11 @@ int main(int argc, const char * argv[]) {
     }
     
     @autoreleasepool {
-        AppDelegate *app = [AppDelegate alloc];
-        [app setupWithUUID:uuid
-                     major:major
-                     minor:minor
-                     power:power];
+        BeaconManager *manager = [BeaconManager alloc];
+        [manager setupWithUUID:uuid
+                         major:major
+                         minor:minor
+                         power:power];
         
         NSRunLoop *runLoop = [NSRunLoop currentRunLoop];
         [runLoop run];
